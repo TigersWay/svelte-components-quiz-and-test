@@ -1,0 +1,34 @@
+{
+  "name": "svelte-components-quiz-and-test",
+  "description": "Svelte Components - Chapter I",
+  "keywords": [
+    "svelte",
+    "sveltejs",
+    "svelte3",
+    "svelte-components",
+    "quiz",
+    "test",
+    "hjson"
+  ],
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Ben Michaud <ben@tigersway.net>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TigersWay/svelte-components-quiz-and-test.git"
+  },
+  "scripts": {
+    "start": "rollup -c -w"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "rollup": "^2.40.0",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "svelte": "^3.34.0"
+  }
+}

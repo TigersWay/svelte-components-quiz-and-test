@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Svelte Components - Chapter I</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css">
+</head>
+<body class="m-8 space-y-8">
+
+  <section class="container mx-auto px-4 py-2 border">
+    <h2 class="text-xl font-bold mb-4">Evaluation (French)</h2>
+    <tw-evaluation columns="20rem auto" hjson="[{
+        question: Dans un groupe, vous êtes celui qui :
+        answers: [
+          A - Parle au nom des autres
+          B - Veille au bien-être des autres
+          C - Dirige les autres
+        ]
+      }, {
+        question: Votre rythme naturel, c'est plutôt :
+        answers: [
+          A - 10h de sommeil impérativement
+          B - Vous vous adaptez tout le temps
+          C - Vous vous adaptez mais pas longtemps
+        ]
+      }, {
+        question: Pour vous le métier d'hôtesse de l'air/steward, c'est surtout :
+        answers: [
+          A - De l'aventure
+          B - De l'accompagnement et du relationnel
+          C - Du glamour et des voyages
+        ]
+      }, {
+        question: On dit souvent de vous que vous avez :
+        answers: [
+          A - Le sens du relationnel
+          B - Le sens de l'analyse
+          C - Le sens du devoir
+        ]
+      }, {
+        question: Ce que vous détestez quand on vous confie une mission, c'est que :
+        answers: [
+          A - Que ce soit routinier
+          B - Que ce soit imprévu
+          C - Que ce soit abstrait
+        ]
+      }, {
+        question: Vous verriez le travail comme :
+        answers: [
+          A - Un mode de vie et d'engagement
+          B - Un moyen de subsistance, avant tout
+          C - Un lieu d'épanouissement et d'aventure
+        ]
+      }, {
+        question: Quand on vous donne une mission :
+        answers: [
+          A - Vous cherchez toujours à comprendre pourquoi, vous êtes du type curieux
+          B - Vous l'appliquez à la lettre, vous êtes du type discipliné
+          C - Vous le faites dans les grandes lignes, vous êtes du type fantaisiste
+        ]
+      }, {
+        question: Votre plus grande qualité serait :
+        answers: [
+          A - Le goût du risque
+          B - La patience
+          C - L'éloquence
+        ]
+      }, {
+        question: Pour vous, suivre les règles, c'est :
+        answers: [
+          A - Une contrainte, vous aimez improviser
+          B - Une nécessité, vous aimez les règles claires
+          C - C'est une obligation que vous suivez sans plaisir
+        ]
+      }, {
+        question: Votre meilleur atout pour le métier, c'est selon vous :
+        answers: [
+          A - Votre sens de la répartie
+          B - Votre sens de la géographie
+          C - Votre sens de l'organisation'
+        ]
+    }]"></tw-evaluation>
+  </section>
+
+  <section class="container mx-auto px-4 py-2 border">
+    <h2 class="text-xl font-bold mb-4">Entertainment: Film</h2> <!-- https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple -->
+    <tw-quiz columns="20rem auto" hjson="[{
+        question: Who starred as Bruce Wayne and Batman in Tim Burton's 1989 movie `Batman`?
+        correct: Michael Keaton
+        answers: [
+          George Clooney
+          Val Kilmer
+          Adam West
+        ]
+      }, {
+        question: What name did Tom Hanks give to his volleyball companion in the film `Cast Away`?
+        correct: Wilson
+        answers: [
+          Friday
+          Jones
+          Billy
+        ]
+      }, {
+        question: Which animated movie was first to feature a celebrity as a voice actor?
+        correct: Aladdin
+        answers: [
+          Toy Story
+          James and the Giant Peach
+          The Hunchback of Notre Dame
+        ]
+      }, {
+        question: When was the movie `Con Air` released?
+        correct: 1997
+        answers: [
+          1985
+          1999
+          1990
+        ]
+      }, {
+        question: Who starred in the film 1973 movie `Enter The Dragon`?
+        correct: Bruce Lee
+        answers: [
+          Jackie Chan
+          Jet Li
+          Yun-Fat Chow
+        ]
+      }, {
+        question: The Queen song `A Kind Of Magic` is featured in which 1986 film?
+        correct: Highlander
+        answers: [
+          Flash Gordon
+          Labyrinth
+          Howard the Duck
+        ]
+      }, {
+        question: This movie contains the quote, `Houston, we have a problem`.
+        correct: Apollo 13
+        answers: [
+          The Right Stuff
+          Capricorn One
+          Marooned
+        ]
+      }, {
+        question: What was the first James Bond film?
+        correct: Dr. No
+        answers: [
+          Goldfinger
+          From Russia With Love
+          Thunderball
+        ]
+      }, {
+        question: Who plays Alice in the Resident Evil movies?
+        correct: Milla Jovovich
+        answers: [
+          Madison Derpe
+          Milla Johnson
+          Kim Demp
+        ]
+      }, {
+        question: When does `Rogue One: A Star Wars Story` take place chronologically in the series?
+        correct: Between Episode 3 and 4
+        answers: [
+          After Episode 6
+          Before Episode 1
+          Between Episode 4 and 5
+        ]
+      }]"></tw-quiz>
+  </section>
+
+  <section class="container mx-auto px-4 py-2 border">
+    <h2 class="text-xl font-bold mb-4">Random</h2>
+    <tw-quiz hjson="[{
+        question: What does WWW stand for?
+        answers: [
+          World Wacky Web
+          Wide World Wumpus
+          Wide World of Why?
+        ]
+        correct: World Wide Web
+    }, {
+      question: Which one of the following is a search engine?
+      answers: [
+        Netscape
+        Java
+        Internet
+      ]
+      correct: Altavista
+    }, {
+      question: What is the name of the language you use to write a web page?
+      answers: [
+        URL
+        FTP
+        HTTP
+      ]
+      correct: HTML
+    }, {
+      question: Which of the following are `browsers`?
+      answers: [
+        Email, WWW, chrome
+        MSN, Netscape, Dogpile
+        Avant, Yahoo, Rock, Melt
+      ]
+      correct: Safari, Mozilla Firefox, IE
+    }, {
+      question: The Internet is controlled by one big computer.
+      answers: [
+        True
+      ]
+      correct: False
+    }, {
+      question: An example of a search engine is Internet Explorer.
+      answers: [
+        True
+      ]
+      correct: False
+    }, {
+      question: What is an example of an email client?
+      answers: [
+        Yahoo Mail
+        Google Mail
+        None of the above
+      ]
+      correct: Outlook
+    }, {
+      question: What is internet?
+      answers: [
+        A single network
+        Interconnection of local area networks
+        None
+      ]
+      correct: A vast collection of different networks
+    }, {
+      question: This address doesn’t change every day?
+      answers: [
+        Unique IP address
+        Dynamic IP address
+        Common name and number
+      ]
+      correct: Static IP address
+    }]"></tw-quiz>
+  </section>
+
+  <script src="/bundle.js"></script>
+</body>
+</html>
