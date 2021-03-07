@@ -49,7 +49,7 @@
   <div>
     <p>{question}</p>
     {#each answers as answer}
-    <label><span>{answer[0]}</span><input type=radio bind:group={results[i]} value={answer[0]}>&nbsp;<span>{answer.slice(4)}</span></label>
+    <label><input type=radio bind:group={results[i]} value={answer[0]}>&nbsp;<span>{answer.slice(4)}</span></label>
     {/each}
   </div>
   {/each}
